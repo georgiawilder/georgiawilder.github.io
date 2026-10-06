@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgia Essig</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="description" content="Georgia Essig – studying the social impacts of internet technologies. Columbia CS, Google SWE, Oxford MSc.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inconsolata:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <div class="wrap">
+        <!-- Main Portfolio Layout Grid -->
+        <div class="portfolio-grid">
+            
+            <!-- Left Column: Bio Card (Static Sidebar) -->
+            <aside class="bio-column">
+                <div class="bio-card">
+                    <!-- Profile Photo -->
+                    <div class="photo-frame">
+                        <img src="https://users.ox.ac.uk/~exet6395/prof_pic.jpeg" alt="Georgia Essig" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23f0ebe4%22/><text x=%2250%22 y=%2260%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22%23a0785c%22>G</text></svg>';">
+                    </div>
+                    
+                    <!-- Bio metadata -->
+                    <div class="bio-details">
+                        <h1 class="bio-name">Georgia Essig</h1>
+                        <p class="bio-location"><i class="fa-solid fa-location-dot"></i> Oxford, UK</p>
+                        <a href="mailto:georgia.w.essig@gmail.com" class="bio-email">
+                            <i class="fa-solid fa-envelope"></i> georgia.w.essig@gmail.com
+                        </a>
+                    </div>
+                    
+                    <hr class="card-divider">
+                    
+                    <!-- Resume & Academic Links -->
+                    <div class="bio-links-group">
+                        <a href="https://users.ox.ac.uk/~exet6395/Georgia_Essig_CV_2025.pdf" target="_blank" rel="noopener" class="btn-bio-link">
+                            <i class="fa-regular fa-file-pdf"></i> View Resume
+                        </a>
+                        <a href="https://github.com/georgiawilder" target="_blank" rel="noopener" class="btn-bio-link">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=rRhmUzUAAAAJ&hl=en" target="_blank" rel="noopener" class="btn-bio-link">
+                            <i class="fa-solid fa-graduation-cap"></i> Google Scholar
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            
+            <!-- Right Column: Interactive Tabbed Panel -->
+            <main class="content-column">
+                <div class="main-content-card">
+                    <!-- Navigation Tabs -->
+                    <nav class="nav-tabs" role="tablist">
+                        <button class="nav-tab active" data-tab="about" role="tab" aria-selected="true">
+                            <i class="fa-regular fa-user"></i> About
+                        </button>
+                        <button class="nav-tab" data-tab="projects" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-diagram-project"></i> Projects & Research
+                        </button>
+                        <button class="nav-tab" data-tab="game" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-puzzle-piece"></i> Play Connections
+                        </button>
+                    </nav>
+                    
+                    <!-- Tab Panel Containers -->
+                    <div class="tab-contents">
+                        
+                        <!-- TAB 1: About Bio -->
+                        <section id="tab-about" class="tab-panel active" role="tabpanel">
+                            <div class="hero-block">
+                                <h2 class="hero-greeting" id="typed-greeting"></h2>
+                                <span class="typing-cursor" id="typing-cursor">|</span>
+                                <p class="hero-intro">
+                                    I am studying the social science of the internet.
+                                </p>
+                            </div>
+                            
+                            <!-- Academic & Professional Timeline -->
+                            <div class="timeline-container">
+                                <h3 class="section-title">Timeline</h3>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h4 class="timeline-title">MSc Social Science of the Internet</h4>
+                                            <div class="timeline-subtitle">Oxford Internet Institute (Shirley Scholar, expected 2026)</div>
+                                            <p class="timeline-desc">Investigating the environmental impacts of generative AI usage.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h4 class="timeline-title">Software Engineer</h4>
+                                            <div class="timeline-subtitle">Google (2020 – 2025)</div>
+                                            <p class="timeline-desc">Worked on AI agent evaluation, device trust, and site reliability.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h4 class="timeline-title">BA Computer Science</h4>
+                                            <div class="timeline-subtitle">Columbia University (Valedictorian, 2020)</div>
+                                            <p class="timeline-desc">Studied computer science and Russian language & culture.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Artwork Accent -->
+                            <div class="artwork-accent">
+                                <div class="artwork-image-wrap">
+                                    <img src="https://imgsrv.brooklynmuseum.org/collections/objects/77.11_cropped_PS20.jpg?width=1080&quality=75" alt="Brooklyn Bridge by Georgia O'Keeffe, 1949" class="artwork-image">
+                                </div>
+                                <div class="artwork-caption">
+                                    <span class="artwork-title">Brooklyn Bridge</span>
+                                    <span class="artwork-artist">Georgia O'Keeffe, 1949</span>
+                                    <a href="https://www.brooklynmuseum.org/objects/1569" target="_blank" rel="noopener" class="artwork-link">
+                                        Brooklyn Museum <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!-- TAB 2: Projects & Publications -->
+                        <section id="tab-projects" class="tab-panel" role="tabpanel">
+                            <h3 class="section-title">Projects & Research</h3>
+                            <div class="projects-list">
+                                <div class="project-card">
+                                    <div class="project-header">
+                                        <h4 class="project-title">Agent evaluation service</h4>
+                                        <span class="project-badge">Google</span>
+                                    </div>
+                                    <p class="project-desc">Designed evaluation services for internal AI agents during tenure at Google.</p>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <div class="project-header">
+                                        <h4 class="project-title">Network measurement</h4>
+                                        <span class="project-badge">INFOCOM</span>
+                                    </div>
+                                    <p class="project-desc">Co-authored research analyzing cloud network performance across private wide-area networks (WANs).</p>
+                                    <div class="project-footer">
+                                        <a href="https://ieeexplore.ieee.org/document/9155428" target="_blank" rel="noopener" class="project-link">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Read Publication (IEEE INFOCOM)
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <div class="project-header">
+                                        <h4 class="project-title">Census response modeling</h4>
+                                        <span class="project-badge">Columbia University</span>
+                                    </div>
+                                    <p class="project-desc">Developed Bayesian predictive models to forecast local tract-level response rates for the United States Census.</p>
+                                    <div class="project-footer">
+                                        <a href="http://tractbytract.com/" target="_blank" rel="noopener" class="project-link">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit tractbytract.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!-- TAB 3: Connections Game -->
+                        <section id="tab-game" class="tab-panel" role="tabpanel">
+                            <div class="game-intro">
+                                <h3 class="section-title">Play: Connections</h3>
+                                <p class="game-desc">Find groups of four words that share a common thread! Tap four words and press Submit.</p>
+                            </div>
+                            
+                            <!-- Connections Game Interface -->
+                            <div class="connections-board-container">
+                                <!-- Solved Category Rows -->
+                                <div id="solved-categories" class="solved-categories-list"></div>
+                                
+                                <!-- Card Grid -->
+                                <div id="connections-grid" class="connections-grid"></div>
+                                
+                                <!-- Game Status -->
+                                <div class="game-status-row">
+                                    <div id="game-message" class="game-alert-message">Select 4 cards to start!</div>
+                                    <div class="mistakes-tracker">
+                                        <span class="mistakes-label">Mistakes remaining:</span>
+                                        <span id="mistake-dots" class="mistake-dots">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Action Buttons -->
+                                <div class="game-action-buttons">
+                                    <button id="btn-shuffle" class="btn-game-sec"><i class="fa-solid fa-shuffle"></i> Shuffle</button>
+                                    <button id="btn-deselect" class="btn-game-sec"><i class="fa-solid fa-rotate-left"></i> Deselect All</button>
+                                    <button id="btn-submit" class="btn-game-primary" disabled><i class="fa-solid fa-check"></i> Submit</button>
+                                </div>
+                            </div>
+                        </section>
+                        
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p>© <span id="year"></span> Georgia Essig</p>
+        </footer>
+    </div>
+
+    <!-- Game Solved Modal -->
+    <div class="game-modal-overlay" id="game-over-overlay">
+        <div class="game-modal-content">
+            <h2 id="game-over-title">You Solved It!</h2>
+            <p id="game-over-subtitle">Georgia's Connections</p>
+            <div id="emoji-result-grid" class="emoji-grid-display"></div>
+            <div class="game-modal-actions">
+                <button id="btn-share-results" class="btn-game-primary">
+                    <i class="fa-solid fa-share-nodes"></i> Copy Results
+                </button>
+                <button id="btn-restart-game" class="btn-game-sec">
+                    <i class="fa-solid fa-rotate"></i> Reset Game
+                </button>
+                <button id="btn-close-game-modal" class="btn-game-sec">
+                    <i class="fa-solid fa-xmark"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Imports -->
+    <script src="js/connections.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
